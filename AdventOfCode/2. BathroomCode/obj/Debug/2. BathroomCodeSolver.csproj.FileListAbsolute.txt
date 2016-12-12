@@ -1,0 +1,10 @@
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\2\CodeSolver\CodeSolver\bin\Debug\CodeSolver.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\2\CodeSolver\CodeSolver\bin\Debug\CodeSolver.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\2\CodeSolver\CodeSolver\obj\Debug\2. BathroomCodeSolver.csprojResolveAssemblyReference.cache
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\2\CodeSolver\CodeSolver\obj\Debug\CodeSolver.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\2\CodeSolver\CodeSolver\obj\Debug\CodeSolver.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\2. BathroomCode\CodeSolver\bin\Debug\CodeSolver.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\2. BathroomCode\CodeSolver\bin\Debug\CodeSolver.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\2. BathroomCode\CodeSolver\obj\Debug\2. BathroomCodeSolver.csprojResolveAssemblyReference.cache
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\2. BathroomCode\CodeSolver\obj\Debug\CodeSolver.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\2. BathroomCode\CodeSolver\obj\Debug\CodeSolver.pdb

@@ -1,0 +1,5 @@
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\3. Triangles\bin\Debug\_3.Triangles.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\3. Triangles\bin\Debug\_3.Triangles.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\3. Triangles\obj\Debug\_3.Triangles.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\3. Triangles\obj\Debug\_3.Triangles.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\3. Triangles\obj\Debug\3. Triangles.csprojResolveAssemblyReference.cache

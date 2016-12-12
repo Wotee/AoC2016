@@ -1,0 +1,5 @@
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\6. SignalCorrection\SignalCorrection\bin\Debug\SignalCorrection.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\6. SignalCorrection\SignalCorrection\bin\Debug\SignalCorrection.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\6. SignalCorrection\SignalCorrection\obj\Debug\SignalCorrection.csprojResolveAssemblyReference.cache
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\6. SignalCorrection\SignalCorrection\obj\Debug\SignalCorrection.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\6. SignalCorrection\SignalCorrection\obj\Debug\SignalCorrection.pdb

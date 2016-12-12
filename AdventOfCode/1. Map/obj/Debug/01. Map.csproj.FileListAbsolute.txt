@@ -1,0 +1,4 @@
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\1. Map\bin\Debug\MapThing.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\1. Map\bin\Debug\MapThing.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\1. Map\obj\Debug\MapThing.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\1. Map\obj\Debug\MapThing.pdb

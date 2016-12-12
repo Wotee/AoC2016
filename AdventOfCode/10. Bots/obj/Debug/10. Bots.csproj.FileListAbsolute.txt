@@ -1,0 +1,5 @@
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\10. Bots\bin\Debug\_10.Bots.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\10. Bots\bin\Debug\_10.Bots.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\10. Bots\obj\Debug\_10.Bots.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\10. Bots\obj\Debug\_10.Bots.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\10. Bots\obj\Debug\10. Bots.csprojResolveAssemblyReference.cache

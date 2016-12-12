@@ -1,0 +1,10 @@
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\7.IPAdresses\7. IPAddresses\bin\Debug\_7.IPAddresses.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\7.IPAdresses\7. IPAddresses\bin\Debug\_7.IPAddresses.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\7.IPAdresses\7. IPAddresses\obj\Debug\_7.IPAddresses.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\7.IPAdresses\7. IPAddresses\obj\Debug\_7.IPAddresses.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\7.IPAdresses\7. IPAddresses\obj\Debug\7. IPAddresses.csprojResolveAssemblyReference.cache
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\7. IPAdresses\7. IPAddresses\obj\Debug\_7.IPAddresses.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\7. IPAdresses\7. IPAddresses\obj\Debug\_7.IPAddresses.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\7. IPAdresses\7. IPAddresses\bin\Debug\_7.IPAddresses.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\7. IPAdresses\7. IPAddresses\bin\Debug\_7.IPAddresses.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\7. IPAdresses\7. IPAddresses\obj\Debug\7. IPAddresses.csprojResolveAssemblyReference.cache

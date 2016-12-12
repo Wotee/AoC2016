@@ -1,0 +1,5 @@
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\1\MapThing\MapThing\obj\Debug\MapThing.csprojResolveAssemblyReference.cache
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\1\MapThing\MapThing\bin\Debug\MapThing.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\1\MapThing\MapThing\bin\Debug\MapThing.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\1\MapThing\MapThing\obj\Debug\MapThing.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\1\MapThing\MapThing\obj\Debug\MapThing.pdb

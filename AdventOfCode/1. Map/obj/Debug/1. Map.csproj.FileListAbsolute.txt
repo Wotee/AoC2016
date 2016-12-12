@@ -1,0 +1,12 @@
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\1\MapThing\MapThing\bin\Debug\MapThing.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\1\MapThing\MapThing\bin\Debug\MapThing.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\1\MapThing\MapThing\obj\Debug\1. Map.csprojResolveAssemblyReference.cache
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\1\MapThing\MapThing\obj\Debug\MapThing.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\1\MapThing\MapThing\obj\Debug\MapThing.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\1. Map\Map\obj\Debug\MapThing.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\1. Map\Map\obj\Debug\MapThing.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\1. Map\Map\obj\Debug\MapThing.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\1. Map\Map\obj\Debug\MapThing.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\1. Map\Map\bin\Debug\MapThing.exe
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\1. Map\Map\bin\Debug\MapThing.pdb
+C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\1. Map\Map\obj\Debug\1. Map.csprojResolveAssemblyReference.cache
