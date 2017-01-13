@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. OneTimePad", "AdventOfC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15. Discs", "AdventOfCode\15. Discs\15. Discs.csproj", "{74533F89-D0DF-4773-A4B5-A88C63BE995C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16. Dragon Curve", "AdventOfCode\16. Dragon Curve\16. Dragon Curve.csproj", "{6E1C5647-195F-40FA-A8B8-EDAE44E73019}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17. Route", "AdventOfCode\17. Route\17. Route.csproj", "{B7702D38-AD39-4C2F-BCF1-1FABBAB65D55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +103,14 @@ Global
 		{74533F89-D0DF-4773-A4B5-A88C63BE995C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74533F89-D0DF-4773-A4B5-A88C63BE995C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74533F89-D0DF-4773-A4B5-A88C63BE995C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E1C5647-195F-40FA-A8B8-EDAE44E73019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E1C5647-195F-40FA-A8B8-EDAE44E73019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E1C5647-195F-40FA-A8B8-EDAE44E73019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E1C5647-195F-40FA-A8B8-EDAE44E73019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7702D38-AD39-4C2F-BCF1-1FABBAB65D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7702D38-AD39-4C2F-BCF1-1FABBAB65D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7702D38-AD39-4C2F-BCF1-1FABBAB65D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7702D38-AD39-4C2F-BCF1-1FABBAB65D55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
