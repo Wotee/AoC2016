@@ -25,6 +25,7 @@
 *.log
 *.sql
 *.sqlite
+*.pdb
 
 # OS generated files #
 ######################
@@ -35,3 +36,5 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+*.suo
