@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Text.RegularExpressions;
 
@@ -36,6 +37,8 @@ namespace _7.IPAddresses
     {
         static void Main(string[] args)
         {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
             IProtocolParser parser1 = new TLSParser();
             IProtocolParser parser2 = new SSLParser();
             using (StreamReader sr = new StreamReader("input.txt"))
@@ -53,6 +56,8 @@ namespace _7.IPAddresses
                 Console.WriteLine("Valid TLS lines: " + TLSCounter);
                 Console.WriteLine("Valid SSL lines: " + SSLCounter);
             }
+            watch.Stop();
+            Console.WriteLine(watch.Elapsed.TotalSeconds);
         }
     }
 }

@@ -39,6 +39,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17. Route", "AdventOfCode\1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18. Tiles", "AdventOfCode\18. Tiles\18. Tiles.csproj", "{BF1F3679-23D8-44DF-8701-EF37221CA25F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19. Elves", "AdventOfCode\19. Elves\19. Elves.csproj", "{25F56224-42F6-4954-A6E4-CB3DB32DE257}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20. IPAddresses", "AdventOfCode\20. IPAddresses\20. IPAddresses.csproj", "{81E41B5B-C24B-4AA5-AFFC-A7888982EDF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +121,14 @@ Global
 		{BF1F3679-23D8-44DF-8701-EF37221CA25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF1F3679-23D8-44DF-8701-EF37221CA25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF1F3679-23D8-44DF-8701-EF37221CA25F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25F56224-42F6-4954-A6E4-CB3DB32DE257}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25F56224-42F6-4954-A6E4-CB3DB32DE257}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25F56224-42F6-4954-A6E4-CB3DB32DE257}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25F56224-42F6-4954-A6E4-CB3DB32DE257}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81E41B5B-C24B-4AA5-AFFC-A7888982EDF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81E41B5B-C24B-4AA5-AFFC-A7888982EDF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81E41B5B-C24B-4AA5-AFFC-A7888982EDF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81E41B5B-C24B-4AA5-AFFC-A7888982EDF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

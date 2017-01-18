@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 
 namespace _14.OneTimePad
 {
@@ -26,6 +27,8 @@ namespace _14.OneTimePad
     {   
         static void Main(string[] args)
         {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
             Dictionary<string, List<Key>> possibleKeysPhase1 = new Dictionary<string, List<Key>>();
             Dictionary<string, List<Key>> possibleKeysPhase2 = new Dictionary<string, List<Key>>();
             List<Key> confirmedKeysPhase1 = new List<Key>();
@@ -34,45 +37,76 @@ namespace _14.OneTimePad
             Regex possibleRegex = new Regex(@"(.)\1{2}");
             Regex confirmingRegex = new Regex(@"(.)\1{4}");
             bool phase1Found = false;
+            bool phase2Found = false;
             string salt = args.Length != 0 ? args[0] : "jlmsuwbz"; // Puzzle input via paramter or hardcoded my default value
+            Calculate phase1 = CalculateHashes;
+            Calculate phase2 = CalculateHashes;
+
             for (int i = 0; i < int.MaxValue; i++)
             {
-
-                string pass = generatePassword(salt + i, 2016);
-                Match possibleMatch = possibleRegex.Match(pass);
-                Match confirmingMatch = confirmingRegex.Match(pass);
-                                
-                if(confirmingMatch.Success)
-                {
-                    foreach (Capture confirmingMatchCapture in confirmingMatch.Captures)
-                    {
-                        string keyToConfirm = confirmingMatchCapture.Value.Substring(0, 3);
-                        if (possibleKeysPhase1.ContainsKey(keyToConfirm))
-                        {
-                            foreach (Key key in possibleKeysPhase1[keyToConfirm])
-                            {
-                                confirmedKeysPhase1.Add(key);
-                            }
-                            possibleKeysPhase1.Remove(keyToConfirm);
-                        }
-                    }
-                }
-                if (possibleMatch.Success)
-                {
-                    if (!possibleKeysPhase1.ContainsKey(possibleMatch.Value))
-                    {
-                        possibleKeysPhase1[possibleMatch.Value] = new List<Key>();
-                    }
-                    possibleKeysPhase1[possibleMatch.Value].Add(new Key(pass, i));
-                }
+                Thread phase1Thread = new Thread(() => phase1Found = phase1(salt, i, 0, possibleRegex, confirmingRegex, possibleKeysPhase1, confirmedKeysPhase1));   
+                Thread phase2Thread = new Thread(() => phase2Found = phase2(salt, i, 2016, possibleRegex, confirmingRegex, possibleKeysPhase2, confirmedKeysPhase2));
+                phase2Thread.Priority = ThreadPriority.Highest;
                 
-                if (confirmedKeysPhase1.Count >= 64)
+                if (!phase1Found)
                 {
-                    Console.WriteLine("64th key produced by index: " + confirmedKeysPhase1[63].index);
-                    break;
+                    phase1Thread.Start();
                 }
-                ReduceTTL(possibleKeysPhase1);
+                if (!phase2Found)
+                {
+                    phase2Thread.Start();
+                }
+                if (phase1Thread.IsAlive)
+                    phase1Thread.Join();
+                
+                if (phase2Thread.IsAlive)
+                    phase2Thread.Join();
+                if (phase1Found && phase2Found)
+                    break;
             }
+            watch.Stop();
+            Console.WriteLine(watch.Elapsed.TotalSeconds);
+        }
+
+        private delegate bool Calculate(string salt, int i, int stretch, Regex possibleRegex, Regex confirmingRegex, Dictionary<string, List<Key>> possibleKeys, List<Key> confirmedKeys);
+
+        private static bool CalculateHashes(string salt, int i, int stretch, Regex possibleRegex, Regex confirmingRegex, Dictionary<string, List<Key>> possibleKeys, List<Key> confirmedKeys)
+        {
+            string pass = generatePassword(salt + i, stretch);
+            Match possibleMatch = possibleRegex.Match(pass);
+            Match confirmingMatch = confirmingRegex.Match(pass);
+
+            if (confirmingMatch.Success)
+            {
+                foreach (Capture confirmingMatchCapture in confirmingMatch.Captures)
+                {
+                    string keyToConfirm = confirmingMatchCapture.Value.Substring(0, 3);
+                    if (possibleKeys.ContainsKey(keyToConfirm))
+                    {
+                        foreach (Key key in possibleKeys[keyToConfirm])
+                        {
+                            confirmedKeys.Add(key);
+                        }
+                        possibleKeys.Remove(keyToConfirm);
+                    }
+                }
+            }
+            if (possibleMatch.Success)
+            {
+                if (!possibleKeys.ContainsKey(possibleMatch.Value))
+                {
+                    possibleKeys[possibleMatch.Value] = new List<Key>();
+                }
+                possibleKeys[possibleMatch.Value].Add(new Key(pass, i));
+            }
+
+            if (confirmedKeys.Count >= 64)
+            {
+                Console.WriteLine(String.Format("64th key produced by index: {0} in phase {1}", confirmedKeys[63].index, stretch == 0 ? "1" : "2"));
+                return true;
+            }
+            ReduceTTL(possibleKeys);
+            return false;
         }
 
         private static void ReduceTTL(Dictionary<string,List<Key>> possibleKeys )

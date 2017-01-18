@@ -12,13 +12,17 @@ namespace _13.Maze
         private static int number;
         static void Main(string[] args)
         {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
             number = args.Length != 0 ? Convert.ToInt32(args[0]) : 1364; // Puzzle input via paramter or hardcoded my default value
             var start = new KeyValuePair<int, int>(1,1);
             var goal = new KeyValuePair<int, int>(31,39);
             List<KeyValuePair<int,int>> route = Astar(start, goal);
             int numberOfReachAbleCoordinates = ReachableCoordinates(start, 50);
-            Console.WriteLine("Phase 1: " + (route.Count-1).ToString());
+            Console.WriteLine("Phase 1: " + (route.Count-1));
             Console.WriteLine("Phase 2: " + numberOfReachAbleCoordinates);
+            watch.Stop();
+            Console.WriteLine(watch.Elapsed.TotalSeconds);
         }
 
         private static int ReachableCoordinates(KeyValuePair<int, int> start, int maxSteps)

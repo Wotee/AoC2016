@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 
@@ -63,6 +64,8 @@ namespace CodeSolver
         private static Pad pad;
         static void Main(string[] args)
         {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
             try
             {
                 for (int phase = 1; phase <= 2; phase++)
@@ -95,6 +98,8 @@ namespace CodeSolver
             {
                 Console.WriteLine("Unknown pad.. Aborting..");
             }
+            watch.Stop();
+            Console.WriteLine(watch.Elapsed.TotalSeconds);
         }
 
         /// <summary>

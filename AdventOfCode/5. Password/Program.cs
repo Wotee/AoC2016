@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
@@ -122,6 +123,8 @@ namespace Password
     {
         static void Main(string[] args)
         {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
             string input = args[0];
             PasswordParser parser;
             for (int phase = 1; phase <= 2; phase++)
@@ -148,6 +151,8 @@ namespace Password
                     Console.WriteLine("Unknown parser.. Aborting..");
                 }
             }
+            watch.Stop();
+            Console.WriteLine(watch.Elapsed.TotalSeconds);
         }
     }
 

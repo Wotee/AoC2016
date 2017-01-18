@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Text.RegularExpressions;
 
@@ -45,13 +46,15 @@ namespace _10.Bots
 
         static void Main(string[] args)
         {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
             bots = new Bot[210];
             for (Int16 i = 0; i < bots.Length; i++)
             {
                 bots[i] = new Bot(i);
             }
-            Regex rgx = new Regex(@"(bot|value|output) [0-9]+");
-            Regex rgx2 = new Regex(@"[0-9]+");
+            Regex rgx = new Regex(@"(bot|value|output) [0-9]+", RegexOptions.Compiled);
+            Regex rgx2 = new Regex(@"[0-9]+", RegexOptions.Compiled);
             using (StreamReader sr = new StreamReader("input.txt"))
             {
                 while (!sr.EndOfStream)
@@ -102,6 +105,9 @@ namespace _10.Bots
                     }
                 }
             }
+            watch.Stop();
+            Console.WriteLine(watch.Elapsed.TotalSeconds);
+            Console.ReadLine();
         }
     }
 

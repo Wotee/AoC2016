@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -13,6 +14,8 @@ namespace _15.Discs
     {
         static void Main(string[] args)
         {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
             Regex regex = new Regex(@"Disc #\d has (\d{1,2}) positions; at time=0, it is at position (\d{1,2})");
             List<KeyValuePair<long, long>> discs = new List<KeyValuePair<long, long>>();
             using (FileStream fs = new FileStream("input.txt", FileMode.Open, FileAccess.Read))
@@ -34,6 +37,8 @@ namespace _15.Discs
 
             discs.Add(new KeyValuePair<long, long>(11,0+1+6)); // Manually did the value + i + 1 trick
             Console.WriteLine(chineseRemainder(discs));
+            watch.Stop();
+            Console.WriteLine(watch.Elapsed.TotalSeconds);
         }
 
         private static long chineseRemainder(List<KeyValuePair<long, long>> discs)

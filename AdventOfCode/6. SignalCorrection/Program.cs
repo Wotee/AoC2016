@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 
@@ -9,6 +10,8 @@ namespace SignalCorrection
     {
         static void Main(string[] args)
         {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
             using (StreamReader sr = new StreamReader("input.txt"))
             {
                 List<Dictionary<char,int>> values = new List<Dictionary<char, int>>();
@@ -41,6 +44,8 @@ namespace SignalCorrection
                 Console.WriteLine("Phase 1: " + new string(message));
                 Console.WriteLine("Phase 2: " + new string(message2));
             }
+            watch.Stop();
+            Console.WriteLine(watch.Elapsed.TotalSeconds);
         }
     }
 }

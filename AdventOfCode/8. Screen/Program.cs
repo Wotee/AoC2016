@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Threading;
 
@@ -83,7 +84,6 @@ namespace _8.Screen
 
             using (var stream = new StreamWriter(Console.OpenStandardOutput()))
             {
-                //stream.Flush();
                 stream.Write(test);
             }
         }
@@ -139,6 +139,8 @@ namespace _8.Screen
     {
         static void Main(string[] args)
         {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
             using (StreamReader sr = new StreamReader("input.txt"))
             {
                 Screen screen = new Screen();
@@ -153,6 +155,8 @@ namespace _8.Screen
                         screen.MoveRowPixels(line.Substring(line.IndexOf('=')+1));
                 }
             }
+            watch.Stop();
+            Console.WriteLine(watch.Elapsed.TotalSeconds);
         }
     }
 }

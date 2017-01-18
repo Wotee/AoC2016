@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -20,6 +21,8 @@ namespace Room_IDs
     {
         static void Main(string[] args)
         {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
             using (StreamReader sr = new StreamReader("input.txt"))
             {
                 int sumOfValidIDs = 0;
@@ -76,6 +79,8 @@ namespace Room_IDs
                     }
                 }
                 Console.WriteLine("Sum om valid IDs: " + sumOfValidIDs);
+                watch.Stop();
+                Console.WriteLine(watch.Elapsed.TotalSeconds);
             }
         }
     }

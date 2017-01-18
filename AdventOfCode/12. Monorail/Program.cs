@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Text.RegularExpressions;
 
@@ -8,6 +9,8 @@ namespace Monorail
     {
         static void Main(string[] args)
         {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
             Regex regex = new Regex(@"\D");
             string[] input = File.ReadAllLines("input.txt");
             for (int phase = 1; phase <= 2; phase++)
@@ -47,7 +50,8 @@ namespace Monorail
                 }
                 Console.WriteLine("Phase " + phase + ": " +registers[0]);
             }
-            Console.Read();
+            watch.Stop();
+            Console.WriteLine(watch.Elapsed.TotalSeconds);
         }
     }
 }

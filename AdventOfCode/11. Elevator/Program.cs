@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -16,6 +17,8 @@ namespace Elevator
 
         static void Main(string[] args)
         {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
             for (int phase = 1; phase <= 2; phase++)
             {
                 stepsTaken = 0;
@@ -55,6 +58,8 @@ namespace Elevator
                 }
                 Console.WriteLine(" Solution for phase " + phase + " found! ");
             }
+            watch.Stop();
+            Console.WriteLine(watch.Elapsed.TotalSeconds);
         }
 
         /// <summary>

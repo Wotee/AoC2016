@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 
@@ -83,6 +84,8 @@ namespace _8.Decompression
     {
         static void Main(string[] args)
         {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
             using (StreamReader sr = new StreamReader("input.txt"))
             {
                 IParser parser;
@@ -105,6 +108,8 @@ namespace _8.Decompression
                     sr.BaseStream.Seek(0, SeekOrigin.Begin);
                 }
             }
+            watch.Stop();
+            Console.WriteLine(watch.Elapsed.TotalSeconds);
         }
     }
 }

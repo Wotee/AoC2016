@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 
 //  V.Tarvus
@@ -38,6 +39,8 @@ namespace Map
         /// <param name="args"></param>
         static void Main(string[] args)
         {
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
             using (StreamReader sr = new StreamReader("input.txt"))
             {
                 string instructions = String.Empty;
@@ -59,6 +62,8 @@ namespace Map
                     }
                 }
                 Console.WriteLine("Final distance is: " + distance());
+                watch.Stop();
+                Console.WriteLine(watch.Elapsed.TotalSeconds);
             }
         }
 
