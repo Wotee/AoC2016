@@ -1,4 +1,0 @@
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\6. SignalCorrection\bin\Debug\SignalCorrection.exe
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\6. SignalCorrection\bin\Debug\SignalCorrection.pdb
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\6. SignalCorrection\obj\Debug\SignalCorrection.exe
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\6. SignalCorrection\obj\Debug\SignalCorrection.pdb

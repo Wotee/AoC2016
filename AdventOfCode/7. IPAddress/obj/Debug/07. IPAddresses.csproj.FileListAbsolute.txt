@@ -1,4 +1,0 @@
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\7. IPAddress\bin\Debug\_7.IPAddresses.exe
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\7. IPAddress\bin\Debug\_7.IPAddresses.pdb
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\7. IPAddress\obj\Debug\_7.IPAddresses.exe
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\7. IPAddress\obj\Debug\_7.IPAddresses.pdb

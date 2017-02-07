@@ -15,33 +15,33 @@ using System.Linq;
 
 namespace CodeSolver
 {
-    public abstract class Pad
-    {
-        public string[][] buttons;
-        public int X;
-        public int Y;
-    }
+	public abstract class Pad
+	{
+		public string[][] buttons;
+		public int X;
+		public int Y;
+	}
 
-    public class NumPad : Pad
-    {
-        public NumPad()
-        {
-            buttons = new []
+	public class NumPad : Pad
+	{
+		public NumPad()
+		{
+			buttons = new[]
                 {
                 new[] {"7", "8", "9"},
                 new[] {"4", "5", "6"},
                 new[] {"1", "2", "3"}
                 };
-            X = 1;
-            Y = 1;    
-        }
-    }
+			X = 1;
+			Y = 1;
+		}
+	}
 
-    public class BonusPad : Pad
-    {
-        public BonusPad()
-        {
-            buttons = new []
+	public class BonusPad : Pad
+	{
+		public BonusPad()
+		{
+			buttons = new[]
                 {
                     new[] {"", "", "D", "", ""},
                     new[] {"", "A", "B", "C", ""},
@@ -49,100 +49,94 @@ namespace CodeSolver
                     new[] {"", "2", "3", "4", ""},
                     new[] {"", "", "1", "", ""},
                 };
-            X = 0;
-            Y = 2;
-        }
-    }
+			X = 0;
+			Y = 2;
+		}
+	}
 
-    /// <summary>
-    /// Execute twice, for phase one with basic numpad,
-    /// for phase two with "BonusPad".
-    /// Read directions and find out the next button to press.
-    /// </summary>
-    static class Program
-    {
-        private static Pad pad;
-        static void Main(string[] args)
-        {
-            Stopwatch watch = new Stopwatch();
-            watch.Start();
-            try
-            {
-                for (int phase = 1; phase <= 2; phase++)
-                {
-                    switch (phase)
-                    {
-                        case 1:
-                            pad = new NumPad();
-                            break;
-                        case 2:
-                            pad = new BonusPad();
-                            break;
-                        default:
-                            throw new Exception("Unknown pad");
-                    }
-                    string TheCode = String.Empty;
+	/// <summary>
+	/// Execute twice, for phase one with basic numpad,
+	/// for phase two with "BonusPad".
+	/// Read directions and find out the next button to press.
+	/// </summary>
+	static class Program
+	{
+		private static Pad pad;
+		static void Main(string[] args)
+		{
+			Stopwatch watch = new Stopwatch();
+			watch.Start();
 
-                    using (StreamReader sr = new StreamReader("input.txt"))
-                    {
-                        while (!sr.EndOfStream)
-                        {
-                            string directions = sr.ReadLine();
-                            TheCode += MoveInPad(directions);
-                        }
-                    }
-                    Console.WriteLine("The bathroom code in phase {0} is {1}", phase, TheCode);
-                }
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("Unknown pad.. Aborting..");
-            }
-            watch.Stop();
-            Console.WriteLine(watch.Elapsed.TotalSeconds);
-        }
+			for (int phase = 1; phase <= 2; phase++)
+			{
+				switch (phase)
+				{
+					case 1:
+						pad = new NumPad();
+						break;
+					case 2:
+						pad = new BonusPad();
+						break;
+				}
+				string TheCode = String.Empty;
 
-        /// <summary>
-        /// Moves within pad to get the next button
-        /// for the code
-        /// </summary>
-        /// <param name="directions">Directions</param>
-        /// <returns>String that reads in a button</returns>
-        private static string MoveInPad(string directions)
-        {
-            foreach (char step in directions)
-            {
-                try
-                {
-                    // NullOrEmpty handles situations where directions
-                    // lead to empty strings meaning "out of the pad"
-                    // and try-catch handles the cases when the code
-                    // actually goes "out of the pad"
-                    switch (step)
-                    {
-                        case 'U':
-                            if (!String.IsNullOrEmpty(pad.buttons.ElementAt(pad.Y + 1).ElementAt(pad.X)))
-                                ++pad.Y;
-                            break;
-                        case 'D':
-                            if (!String.IsNullOrEmpty(pad.buttons.ElementAt(pad.Y - 1).ElementAt(pad.X)))
-                                --pad.Y;
-                            break;
-                        case 'R':
-                            if (!String.IsNullOrEmpty(pad.buttons.ElementAt(pad.Y).ElementAt(pad.X + 1)))
-                                ++pad.X;
-                            break;
-                        case 'L':
-                            if (!String.IsNullOrEmpty(pad.buttons.ElementAt(pad.Y).ElementAt(pad.X - 1)))
-                                --pad.X;
-                            break;
-                        default: // Not possible in this input data... 
-                            throw new Exception("Bad input");
-                    }
-                }
-                catch (Exception) { } // This just silences the "out of the pads", which should be ignored
-            }
-            return pad.buttons.ElementAt(pad.Y).ElementAt(pad.X);
-        }
-    }
+				using (FileStream fs = new FileStream("input.txt", FileMode.Open, FileAccess.Read))
+				using (StreamReader sr = new StreamReader(fs))
+				{
+					while (!sr.EndOfStream)
+					{
+						string directions = sr.ReadLine();
+						TheCode += MoveInPad(directions);
+					}
+				}
+				Console.WriteLine("The bathroom code in phase {0} is {1}", phase, TheCode);
+			}
+
+			watch.Stop();
+			Console.WriteLine(watch.Elapsed.TotalSeconds);
+		}
+
+		/// <summary>
+		/// Moves within pad to get the next button
+		/// for the code
+		/// </summary>
+		/// <param name="directions">Directions</param>
+		/// <returns>String that reads in a button</returns>
+		private static string MoveInPad(string directions)
+		{
+			foreach (char step in directions)
+			{
+				try
+				{
+					// NullOrEmpty handles situations where directions
+					// lead to empty strings meaning "out of the pad"
+					// and try-catch handles the cases when the code
+					// actually goes "out of the pad"
+					switch (step)
+					{
+						case 'U':
+							if (!String.IsNullOrEmpty(pad.buttons.ElementAt(pad.Y + 1).ElementAt(pad.X)))
+								++pad.Y;
+							break;
+						case 'D':
+							if (!String.IsNullOrEmpty(pad.buttons.ElementAt(pad.Y - 1).ElementAt(pad.X)))
+								--pad.Y;
+							break;
+						case 'R':
+							if (!String.IsNullOrEmpty(pad.buttons.ElementAt(pad.Y).ElementAt(pad.X + 1)))
+								++pad.X;
+							break;
+						case 'L':
+							if (!String.IsNullOrEmpty(pad.buttons.ElementAt(pad.Y).ElementAt(pad.X - 1)))
+								--pad.X;
+							break;
+						default: // Not possible in this input data... 
+							throw new Exception("Bad input");
+					}
+				}
+				catch (Exception) { } // This just silences the "out of the pads", which should be ignored
+			}
+			return pad.buttons.ElementAt(pad.Y).ElementAt(pad.X);
+		}
+	}
 }

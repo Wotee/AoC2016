@@ -1,5 +1,0 @@
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\4. Room IDs\bin\Debug\_4.Room_IDs.exe
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\4. Room IDs\bin\Debug\_4.Room_IDs.pdb
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\4. Room IDs\obj\Debug\04. Room IDs.csprojResolveAssemblyReference.cache
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\4. Room IDs\obj\Debug\_4.Room_IDs.exe
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\4. Room IDs\obj\Debug\_4.Room_IDs.pdb

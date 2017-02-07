@@ -1,5 +1,0 @@
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\2. BathroomCode\bin\Debug\CodeSolver.exe
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\2. BathroomCode\bin\Debug\CodeSolver.pdb
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\2. BathroomCode\obj\Debug\02. BathroomCodeSolver.csprojResolveAssemblyReference.cache
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\2. BathroomCode\obj\Debug\CodeSolver.exe
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\2. BathroomCode\obj\Debug\CodeSolver.pdb

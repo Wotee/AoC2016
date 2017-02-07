@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Map", "AdventOfCode\1. Map\01. Map.csproj", "{5C014966-35F3-4E41-839E-E3E6962F6329}"
 EndProject
@@ -43,7 +43,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19. Elves", "AdventOfCode\1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20. IPAddresses", "AdventOfCode\20. IPAddresses\20. IPAddresses.csproj", "{81E41B5B-C24B-4AA5-AFFC-A7888982EDF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21. Scramble", "AdventOfCode\21. Scramble\21. Scramble.csproj", "{BF1A5745-C7EC-4FEC-BFE6-E0AE2049FC0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22. Grid Computing", "AdventOfCode\22. Grid Computing\22. Grid Computing.csproj", "{F063A654-9BCF-4841-939A-73169F042813}"
+EndProject
 Global
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -129,6 +136,14 @@ Global
 		{81E41B5B-C24B-4AA5-AFFC-A7888982EDF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81E41B5B-C24B-4AA5-AFFC-A7888982EDF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81E41B5B-C24B-4AA5-AFFC-A7888982EDF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF1A5745-C7EC-4FEC-BFE6-E0AE2049FC0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF1A5745-C7EC-4FEC-BFE6-E0AE2049FC0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF1A5745-C7EC-4FEC-BFE6-E0AE2049FC0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF1A5745-C7EC-4FEC-BFE6-E0AE2049FC0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F063A654-9BCF-4841-939A-73169F042813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F063A654-9BCF-4841-939A-73169F042813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F063A654-9BCF-4841-939A-73169F042813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F063A654-9BCF-4841-939A-73169F042813}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

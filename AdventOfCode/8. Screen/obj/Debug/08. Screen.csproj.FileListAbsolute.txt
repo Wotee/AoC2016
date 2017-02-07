@@ -1,4 +1,0 @@
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\8. Screen\bin\Debug\_8.Screen.exe
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\8. Screen\bin\Debug\_8.Screen.pdb
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\8. Screen\obj\Debug\_8.Screen.exe
-C:\Util\Tarvus_Valtteri\Desktop\AdventOfCode\AdventOfCode\8. Screen\obj\Debug\_8.Screen.pdb
